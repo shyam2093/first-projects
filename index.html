@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writer's Feedback Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <script src="chatgpt.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Writer's Feedback Platform</h1>
+        
+    </header>
+
+    <main>
+        <section id="submit">
+            <h2>Submit Your Story</h2>
+            <form id="story-form">
+                <textarea placeholder="Type or upload your story here..." required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    
+        <section id="options" style="display:none;">
+            <h2>Select an Option</h2>
+            <button id="review-option">Story Review and Rating</button>
+            <button id="rewrite-option">Rewrite Your Story</button>
+            <button id="check-option">Check Spelling Mistakes</button>
+            <button id="update-option">Update Story</button> <!-- New option added -->
+        </section>
+    
+        <section id="gpt-response" style="display:none;">
+            <h2>GPT Response</h2>
+            <div id="response-output"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Writer's Feedback Platform</p>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
